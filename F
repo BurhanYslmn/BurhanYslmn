@@ -1,0 +1,44 @@
+int vize, final;
+console.writeline(''vize notunu girin: '');
+vize = convert.toInt32(console.readline());
+
+console.writeline(''final notunu girin: '');
+final = convert.toInt32(console.readline());
+
+if (vize < 0 || vize > 100 || final < 0 || final > 100)
+ console.writeline(''vize veya final notu hatali girilmiştir'');
+else 
+{
+
+    double ortalama = math.round(vize * 0.4 + final * 0.6);
+
+    console.writeline(''Hesaplanan ortalama = '' + ortalama );
+
+    if (final < 30)
+ {
+     console.writeline(final notunuz 30 un altindadir)
+
+     console.writeline(''Harf notu: FF'');
+ }
+
+ if (ortalama >= 0 && ortalama <= 39)
+     console.writeline(''Harf notu: FF'');
+else if (ortalama >= 40 && ortalama <= 49)
+     console.writeline(''harf notu: FD'');
+ else if (ortalama >= 40 && ortalama <= 54)
+     console.writeline(''harf notu: DD'');
+ else if (ortalama >= 40 && ortalama <= 59)
+     console.writeline(''harf notu: DC'');
+ else if (ortalama >= 40 && ortalama <= 64)
+     console.writeline(''harf notu: CC'');
+ else if (ortalama >= 40 && ortalama <= 69)
+     console.writeline(''harf notu: CB'');
+ else if (ortalama >= 40 && ortalama <= 79)
+     console.writeline(''harf notu: BB'');
+ else if (ortalama >= 40 && ortalama <= 89)
+     console.writeline(''harf notu: BA'');
+ else if (ortalama >= 40 && ortalama <= 100)
+     console.writeline(''harf notu: AA'');
+ else
+     console.writeline(''otralama hatali hesaplanmistir'');
+}
